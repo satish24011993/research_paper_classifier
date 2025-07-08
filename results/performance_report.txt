@@ -1,0 +1,32 @@
+--- Baseline Model Performance (as per assignment PDF) ---
+Accuracy: 85%
+F1-score: 0.78
+Confusion Matrix:
+                 Predicted Cancer | Predicted Non-Cancer
+Actual Cancer    | 320              | 80
+Actual Non-Cancer| 50               | 550
+
+--- Fine-Tuned Model Performance ---
+Accuracy: 0.92
+F1-score: 0.92
+
+Confusion Matrix:
+            Cancer  Non-Cancer
+Cancer          90          10
+Non-Cancer       6          94
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      Cancer       0.94      0.90      0.92       100
+  Non-Cancer       0.90      0.94      0.92       100
+
+    accuracy                           0.92       200
+   macro avg       0.92      0.92      0.92       200
+weighted avg       0.92      0.92      0.92       200
+
+
+--- Performance Improvement Analysis ---
+Accuracy increased by 0.07% after fine-tuning (compared to baseline 85%).
+F1-score increased by 0.14 after fine-tuning (compared to baseline 0.78).
+Further analysis on false negatives/positives can be done by inspecting the confusion matrix.

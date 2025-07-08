@@ -1,0 +1,77 @@
+{
+    "LogisticRegression": {
+        "accuracy": 0.92,
+        "f1_score": 0.9197994987468673,
+        "confusion_matrix": [
+            [
+                87,
+                13
+            ],
+            [
+                3,
+                97
+            ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n      Cancer       0.97      0.87      0.92       100\n  Non-Cancer       0.88      0.97      0.92       100\n\n    accuracy                           0.92       200\n   macro avg       0.92      0.92      0.92       200\nweighted avg       0.92      0.92      0.92       200\n"
+    },
+    "MultinomialNB": {
+        "accuracy": 0.885,
+        "f1_score": 0.8847666524712543,
+        "confusion_matrix": [
+            [
+                93,
+                7
+            ],
+            [
+                16,
+                84
+            ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n      Cancer       0.85      0.93      0.89       100\n  Non-Cancer       0.92      0.84      0.88       100\n\n    accuracy                           0.89       200\n   macro avg       0.89      0.89      0.88       200\nweighted avg       0.89      0.89      0.88       200\n"
+    },
+    "LinearSVC": {
+        "accuracy": 0.91,
+        "f1_score": 0.9098557692307692,
+        "confusion_matrix": [
+            [
+                87,
+                13
+            ],
+            [
+                5,
+                95
+            ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n      Cancer       0.95      0.87      0.91       100\n  Non-Cancer       0.88      0.95      0.91       100\n\n    accuracy                           0.91       200\n   macro avg       0.91      0.91      0.91       200\nweighted avg       0.91      0.91      0.91       200\n"
+    },
+    "RandomForestClassifier": {
+        "accuracy": 0.945,
+        "f1_score": 0.9449986249656241,
+        "confusion_matrix": [
+            [
+                95,
+                5
+            ],
+            [
+                6,
+                94
+            ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n      Cancer       0.94      0.95      0.95       100\n  Non-Cancer       0.95      0.94      0.94       100\n\n    accuracy                           0.94       200\n   macro avg       0.95      0.94      0.94       200\nweighted avg       0.95      0.94      0.94       200\n"
+    },
+    "XGBClassifier": {
+        "accuracy": 0.92,
+        "f1_score": 0.9197994987468673,
+        "confusion_matrix": [
+            [
+                87,
+                13
+            ],
+            [
+                3,
+                97
+            ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n      Cancer       0.97      0.87      0.92       100\n  Non-Cancer       0.88      0.97      0.92       100\n\n    accuracy                           0.92       200\n   macro avg       0.92      0.92      0.92       200\nweighted avg       0.92      0.92      0.92       200\n"
+    }
+}
