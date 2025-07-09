@@ -27,23 +27,14 @@ It performs two main tasks:
 ```
 .
 ├── app.py                      # FastAPI application for the pipeline
-
 ├── Dockerfile                  # Docker configuration for containerization
-
 ├── deploy.sh                   # Deployment script for local, GCP, and Hugging Face
-
 ├── main_pipeline.py            # Script for data preprocessing, training, and saving model
-
 ├── inference_and_evaluation.py # Script for loading saved model, evaluation, and local inference
-
 ├── results/                    # Directory for model checkpoints, logs, and performance reports
-
 │   ├── fine_tuned_model/       # Saved fine-tuned model and tokenizer
-
 │   ├── label_mappings.json     # JSON file mapping labels to IDs
-
 │   └── performance_report.txt  # Detailed performance metrics
-
 └── Dataset_1_/                 # Root directory for your dataset
     └── Dataset/
         ├── Cancer/             # Contains .txt files for Cancer abstracts
@@ -305,15 +296,15 @@ Once deployed, you can interact with the API:
 Analyzes a single abstract.
 
 **Request Body Example:**
-
+```
 {
     "abstract_id": "30878600",
     "abstract_text": "BACKGROUND: Tyrosine kinase inhibitors (TKIs) are clinically effective in non-small cell lung cancer (NSCLC) patients harbouring epidermal growth factor receptor (EGFR) oncogene mutations. Genetic factors, other than EGFR sensitive mutations, that allow prognosis of TKI treatment remain undefined. METHODS: We retrospectively screened 423 consecutive patients with advanced NSCLC and EGFR 19del or 21L858R mutations..."
 }
-
+```
 
 **Response Body Example:**
-
+```
 {
     "classification": {
         "predicted_labels": ["Cancer"],
@@ -327,7 +318,7 @@ Analyzes a single abstract.
         "extracted_diseases": ["non-small cell lung cancer"]
     }
 }
-
+```
 
 ### `POST /batch_analyze_abstracts`
 
