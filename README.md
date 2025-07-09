@@ -165,26 +165,26 @@ The pipeline evaluates the fine-tuned model's performance against a conceptual b
 The `inference_and_evaluation.py` script will output the actual performance metrics of your fine-tuned model on its validation set. The confusion matrix will reflect the size of your validation set (e.g., 20% of your total dataset).
 
 **Example Output (will vary based on your data and training run):**
-
+```
 --- Fine-Tuned Model Performance ---
-Accuracy: 0.93
-F1-score: 0.93
+Accuracy: 0.92
+F1-score: 0.92
 
 Confusion Matrix:
-Cancer  Non-Cancer
-Cancer          91           9
-Non-Cancer       5          95
+            Cancer  Non-Cancer
+Cancer          90          10
+Non-Cancer       6          94
 
 Classification Report:
-precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-  Cancer       0.95      0.91      0.93       100
-Non-Cancer       0.91      0.95      0.93       100
+      Cancer       0.94      0.90      0.92       100
+  Non-Cancer       0.90      0.94      0.92       100
 
-accuracy                           0.93       200
-macro avg       0.93      0.93      0.93       200
-weighted avg       0.93      0.93      0.93       200
-
+    accuracy                           0.92       200
+   macro avg       0.92      0.92      0.92       200
+weighted avg       0.92      0.92      0.92       200
+```
 
 **Performance Comparison:**
 The fine-tuned model's performance (accuracy, F1-score) is directly compared to the baseline. A higher accuracy and F1-score for the fine-tuned model indicate successful performance improvement. The confusion matrix provides a detailed breakdown of true positives, true negatives, false positives, and false negatives, allowing for a deeper assessment of where the model excels or struggles. For instance, a reduction in "Actual Cancer" predicted as "Non-Cancer" (false negatives) is crucial for improving model reliability in a medical context.
