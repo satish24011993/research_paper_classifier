@@ -3,3 +3,4 @@ velseraenv/
 /results/
 research-paper-classifier-space/
 Dataset_1_/
+__pycache__/
