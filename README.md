@@ -24,7 +24,7 @@ It performs two main tasks:
 * **Cloud Deployment Ready:** Includes a deployment script for Google Cloud Run and Hugging Face Spaces.
 
 ## Project Structure
-
+```
 .
 ├── app.py                      # FastAPI application for the pipeline
 ├── Dockerfile                  # Docker configuration for containerization
@@ -36,11 +36,12 @@ It performs two main tasks:
 │   ├── label_mappings.json     # JSON file mapping labels to IDs
 │   └── performance_report.txt  # Detailed performance metrics
 └── Dataset_1_/                 # Root directory for your dataset
-└── Dataset/
-├── Cancer/             # Contains .txt files for Cancer abstracts
-│   ├── 
-
-
+    └── Dataset/
+        ├── Cancer/             # Contains .txt files for Cancer abstracts
+        │   ├── 
+        ├── Non-Cancer/
+            |── 
+```
 ## Setup and Installation
 
 ### Prerequisites
@@ -324,7 +325,7 @@ Analyzes a single abstract.
 Analyzes multiple abstracts in a batch.
 
 **Request Body Example:**
-
+```
 [
     {
         "abstract_id": "30878600",
@@ -335,10 +336,10 @@ Analyzes multiple abstracts in a batch.
         "abstract_text": "Psoriasis vulgaris is a genetically heterogenous disease with unclear molecular background. We assessed the association of psoriasis and its main clinical phenotypes..."
     }
 ]
-
+```
 
 **Response Body Example:**
-
+```
 [
     {
         "classification": {
@@ -367,7 +368,7 @@ Analyzes multiple abstracts in a batch.
         }
     }
 ]
-
+```
 
 ## Scalability Enhancements (Bonus)
 

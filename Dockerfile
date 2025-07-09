@@ -16,10 +16,11 @@ RUN apt-get update && apt-get install -y \
 
 # Install Python dependencies
 # Using specific versions for stability
+RUN pip --no-cache-dir install torch==2.0.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
 RUN pip install --no-cache-dir \
     "transformers==4.30.2" \
     "peft==0.4.0" \
-    "torch==2.0.1" \
+    # "torch==2.0.1" \
     "pandas==2.0.3" \
     "scikit-learn==1.3.0" \
     "fastapi==0.103.2" \
@@ -29,6 +30,7 @@ RUN pip install --no-cache-dir \
     "protobuf==3.20.3" \
     "grpcio==1.59.0" \
     "python-dotenv==1.0.0"
+
 
 # Expose the port FastAPI will run on
 EXPOSE 8000

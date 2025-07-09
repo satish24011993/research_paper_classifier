@@ -255,35 +255,4 @@ if __name__ == "__main__":
         # The evaluation and local inference demonstration are moved to a separate script.
         print("\n--- Model Training Complete. Run 'inference_and_evaluation.py' for evaluation and inference. ---")
 
-    # --- Generate Deployment Files (for completeness, though not run by this script) ---
-    # These parts are typically generated once after the training script is finalized.
-    # I'm including them here as comments to indicate their original placement
-    # and that they are part of the overall solution.
-    # In a real setup, you might have a separate script for generating these.
-
-    # print("\n--- Generating Deployment Files (app.py, Dockerfile, deploy.sh, README.md) ---")
-
-    # # Create a separate Python file for the FastAPI app (app.py)
-    # fastapi_app_code = """..."""
-    # with open("app.py", "w") as f:
-    #     f.write(fastapi_app_code)
-    # print("\nFastAPI application 'app.py' created.")
-
-    # # Create Dockerfile
-    # dockerfile_content = """..."""
-    # with open("Dockerfile", "w") as f:
-    #     f.write(dockerfile_content)
-    # print("Dockerfile created.")
-
-    # # Create Deployment Script
-    # deployment_script_content = """..."""
-    # with open("deploy.sh", "w") as f:
-    #     f.write(deployment_script_content)
-    # os.chmod("deploy.sh", 0o755)
-    # print("Deployment script 'deploy.sh' created.")
-
-    # # Create README.md
-    # readme_content = """..."""
-    # with open("README.md", "w") as f:
-    #     f.write(readme_content)
-    # print("README.md created.")
+    
