@@ -246,7 +246,7 @@ The `deploy.sh` script provides options for deploying to Google Cloud Run or Hug
 3.  **Update `deploy.sh` placeholders:**
     Open `deploy.sh` and replace `your-gcp-project-id` and `us-central1` (region) with your actual project ID and desired region.
 
-4.  **Make `deploy.sh` execurable:**
+4.  **Make `deploy.sh` executable:**
     ```
     chmod +x deploy.sh
     ```
