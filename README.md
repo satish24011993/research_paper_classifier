@@ -228,7 +228,7 @@ The `deploy.sh` script provides options for deploying to Google Cloud Run or Hug
 
 # You can access the interactive API documentation (Swagger UI) by appending /docs to the service URL:
 
-**API Documentation URL:** `https://research-paper-pipeline-79755680491.us-central1.run.app/doc`
+**API Documentation URL:** `https://research-paper-pipeline-79755680491.us-central1.run.app/docs`
 1.  **Ensure Google Cloud SDK is installed and configured:**
 
     ```
