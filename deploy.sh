@@ -4,7 +4,7 @@
 APP_NAME="research-paper-pipeline"
 DOCKER_IMAGE_NAME="research-paper-classifier"
 DOCKER_TAG="latest"
-GCP_PROJECT_ID=79755680491 # REPLACE WITH YOUR GCP PROJECT ID
+GCP_PROJECT_ID="gen-lang-client-0583964741" # REPLACE WITH YOUR GCP PROJECT ID
 GCP_REGION="us-central1" # REPLACE WITH YOUR DESIRED GCP REGION
 HF_SPACE_NAME="reasearch-paper-classifier-space" # REPLACE WITH YOUR HUGGING FACE SPACE NAME
 
@@ -92,6 +92,8 @@ elif [ "$choice" == "3" ]; then
         --image ${GCP_REGION}-docker.pkg.dev/${GCP_PROJECT_ID}/${APP_NAME}/${DOCKER_IMAGE_NAME}:${DOCKER_TAG} \
         --platform managed \
         --region ${GCP_REGION} \
+        --memory 2Gi \
+        --timeout 600
         --allow-unauthenticated \
         --port 8000 \
         --set-env-vars GOOGLE_API_KEY="${GOOGLE_API_KEY_INPUT}"

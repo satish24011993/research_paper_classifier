@@ -222,6 +222,13 @@ The `deploy.sh` script provides options for deploying to Google Cloud Run or Hug
 
 ### Deploying to Google Cloud Run
 
+# The pipeline has been successfully deployed to Google Cloud Run.
+
+**Service URL:** `https://research-paper-pipeline-79755680491.us-central1.run.app`
+
+# You can access the interactive API documentation (Swagger UI) by appending /docs to the service URL:
+
+**API Documentation URL:** `https://research-paper-pipeline-79755680491.us-central1.run.app/doc`
 1.  **Ensure Google Cloud SDK is installed and configured:**
 
     ```
@@ -239,7 +246,12 @@ The `deploy.sh` script provides options for deploying to Google Cloud Run or Hug
 3.  **Update `deploy.sh` placeholders:**
     Open `deploy.sh` and replace `your-gcp-project-id` and `us-central1` (region) with your actual project ID and desired region.
 
-4.  **Run the deployment script:**
+4.  **Make `deploy.sh` execurable:**
+    ```
+    chmod +x deploy.sh
+    ```
+
+5.  **Run the deployment script:**
 
     ```
     ./deploy.sh
@@ -401,3 +413,4 @@ This pipeline can indeed be orchestrated as an agentic workflow solution, where 
 6.  **Output & Storage Agent:** Finally, an agent responsible for formatting and storing the results (e.g., saving to a database, generating a PDF report, or sending notifications).
 
 This modular, agent-based approach allows for greater flexibility, maintainability, and the ability to easily swap out or add new capabilities (e.g., an agent for identifying drug interactions or clinical trial phases).
+
