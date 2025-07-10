@@ -224,11 +224,12 @@ The `deploy.sh` script provides options for deploying to Google Cloud Run or Hug
 
 # The pipeline has been successfully deployed to Google Cloud Run.
 
-**Service URL:** `https://research-paper-pipeline-79755680491.us-central1.run.app`
+**Service URL:** <link>https://research-paper-pipeline-79755680491.us-central1.run.app</link>
 
 # You can access the interactive API documentation (Swagger UI) by appending /docs to the service URL:
 
-**API Documentation URL:** `https://research-paper-pipeline-79755680491.us-central1.run.app/docs`
+**API Documentation URL:** <link>https://research-paper-pipeline-79755680491.us-central1.run.app/docs</link>
+
 1.  **Ensure Google Cloud SDK is installed and configured:**
 
     ```
